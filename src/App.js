@@ -78,7 +78,7 @@ function App() {
               <h2 className="font-semibold text-3xl mb-7 text-blue-500">Personal Information</h2>
               <label htmlFor="fullname" className="mb-1 mt-4 font-bold text-gray-600"><span className="text-red-600 text-sm">*</span> Full Name</label>
               <input
-                type="text" id="fullname" name="fullname"
+                type="text" id="fullname" name="fullname" placeholder="Please enter your name"
                 className="outline-none text-input border-gray-200 border-2 rounded-md px-2 py-1 focus:border-blue-400"
                 {...register("fullname", { required: 'Please fill input', errors: true })}
               />
@@ -86,7 +86,7 @@ function App() {
 
               <label htmlFor="age" className="mb-1 mt-4 font-bold text-gray-600"><span className="text-red-600 text-sm">*</span> Age</label>
               <input
-                required type="text" required={true} id="age" name="age" placeholder="29"
+                required type="text" required={true} id="age" name="age" placeholder="Please enter your age"
                 className="outline-none text-input border-gray-200 border-2 rounded-md px-2 py-1 focus:border-blue-400"
                 {...register("age", {
                   required: 'Please fill input',
@@ -108,7 +108,7 @@ function App() {
               <h2 className="font-semibold text-3xl mb-7 text-blue-500">Contact Information</h2>
               <label htmlFor="address" className="mt-4 font-bold text-gray-600"><span className="text-red-600 text-sm">*</span> Email:</label>
               <input
-                type="email" id="email" name="email"
+                type="email" id="email" name="email" placeholder="please enter your email"
                 className="outline-none text-input border-gray-200 border-2 rounded-md px-2 py-1 focus:border-blue-400"
                 {...register("email", {
                   required: "Please fill your email",
